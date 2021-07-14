@@ -1,0 +1,214 @@
+@import "reset";
+@import "mixin";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+
+$color:(
+  red:#891818,
+  gray:#707070,
+  white:#ffffff,
+  black:#000000,
+);
+
+$bg_map:(
+  png:heroimg photo brand_img1 brand_img2 brand_img3 work1 work2 work3 work4 work5 work6 work7 work8,
+  svg:behance facebook instagram youtube,
+);
+@include bgImg;
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+//共用 css
+h2{
+  font:italic 500 64px/1.3125 Roboto;
+  text-align: center;
+}
+h4{
+  font:italic 500 20px/1.5 Roboto;
+  text-align: center;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+//版面 css
+.bg-heroimg{
+  max-width: 100%;
+  height: 100vh;
+  border:1px solid map-get($color,gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 56px;
+  .txt{
+    display: inline-block;
+    color:map-get($color,white);
+    small{
+      font:italic bold 24px/42px Roboto;
+    }
+    h1{
+      font:italic 900 80px/106px Roboto;
+      margin-bottom: 32px;
+    }
+    h3{
+      font: italic bold 24px/36px Roboto;
+      margin-bottom: 40px;
+    }
+    .icon{
+      display: flex;
+      justify-content: space-between;
+      & > div{
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}
+
+.about{
+  padding-bottom: 56px;
+  h2{
+    margin-bottom: 40px;
+  }
+  .bg-photo{
+    width: 384px;
+    height: 384px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .intro{
+    font: italic bold 24px/1.75 Roboto;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  hr{
+    width: 384px;
+    border:1px solid map-get($color,black);
+    margin-bottom: 28px;
+  }
+  .exp{
+    text-align: center;
+    font:italic bold 24px/42px Roboto;
+    & >li{
+      margin-bottom: 28px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    p{
+      display: inline-block;
+      position: relative;
+      &:before{
+        content:"";
+        width:22px;
+        height:22px; //正圓形，所以寬與高都設一樣
+        border-radius:999em;
+        background-color:map-get($color,red);
+        position: absolute;
+        top: calc(50% - 11px);
+        left: calc(-16px + -22px)
+      }
+    }
+  }
+}
+
+.brand{
+  background-color: map-get($color,black);
+  color:map-get($color,white);
+  padding: 56px 0 120px 0;
+  text-align: center;
+  border: 1px solid map-get($color,gray);
+  h2{
+    margin-bottom: 12px;
+  }
+  h3{
+    font:italic 500 24px/42px Roboto;
+    margin-bottom: 32px;
+  }
+  h4{
+    margin-bottom: 68px;
+  }
+  .bg{
+    &-brand_img1{
+      width: 792px;
+      height: 416px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+    &-brand_img2{
+      width: 588px;
+      height: 416px;
+    }
+    &-brand_img3{
+      width: 588px;
+      height: 416px;
+    }
+  }
+  .brand-group{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.other{
+  padding:56px 0 96px 0;
+  h2{
+    margin-bottom: 16px;
+  }
+  h4{
+    margin-bottom: 56px;
+  }
+  .work-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &>li{
+      margin-bottom: 48px;
+      & p{
+        font:italic 500 20px/42px Roboto;
+        text-align: center;
+      }
+    }
+  }
+  @for $i from 1 through 3{
+    .bg-work#{$i}{
+      width: 384px;
+      height: 528px;
+    }
+  }
+  @for $i from 4 through 5{
+    .bg-work#{$i}{
+      width: 588px;
+      height: 424px;
+    }
+  }
+  @for $i from 6 through 8{
+    .bg-work#{$i}{
+      width: 384px;
+      height: 280px;
+    }
+  } 
+}
+
+.contact{
+  background-color: map-get($color,black);
+  padding: 64px 0 64px 0;
+  color: map-get($color,white);
+  h2{
+    line-height: 84px;
+    margin-bottom: 16px;
+  }
+  p{
+    font:italic 500 24px/36px Roboto;
+    text-align: center;
+    &:nth-child(2){
+      margin-bottom: 16px;
+    }
+  }
+}

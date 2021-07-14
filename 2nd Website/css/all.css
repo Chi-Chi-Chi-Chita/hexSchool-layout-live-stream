@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.bg-heroimg {
+  background: url("../img/heroimg.png") no-repeat center center/cover;
+}
+
+.bg-photo {
+  background: url("../img/photo.png") no-repeat center center/cover;
+}
+
+.bg-brand_img1 {
+  background: url("../img/brand_img1.png") no-repeat center center/cover;
+}
+
+.bg-brand_img2 {
+  background: url("../img/brand_img2.png") no-repeat center center/cover;
+}
+
+.bg-brand_img3 {
+  background: url("../img/brand_img3.png") no-repeat center center/cover;
+}
+
+.bg-work1 {
+  background: url("../img/work1.png") no-repeat center center/cover;
+}
+
+.bg-work2 {
+  background: url("../img/work2.png") no-repeat center center/cover;
+}
+
+.bg-work3 {
+  background: url("../img/work3.png") no-repeat center center/cover;
+}
+
+.bg-work4 {
+  background: url("../img/work4.png") no-repeat center center/cover;
+}
+
+.bg-work5 {
+  background: url("../img/work5.png") no-repeat center center/cover;
+}
+
+.bg-work6 {
+  background: url("../img/work6.png") no-repeat center center/cover;
+}
+
+.bg-work7 {
+  background: url("../img/work7.png") no-repeat center center/cover;
+}
+
+.bg-work8 {
+  background: url("../img/work8.png") no-repeat center center/cover;
+}
+
+.bg-behance {
+  background: url("../img/behance.svg") no-repeat center center/cover;
+}
+
+.bg-facebook {
+  background: url("../img/facebook.svg") no-repeat center center/cover;
+}
+
+.bg-instagram {
+  background: url("../img/instagram.svg") no-repeat center center/cover;
+}
+
+.bg-youtube {
+  background: url("../img/youtube.svg") no-repeat center center/cover;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+h2 {
+  font: italic 500 64px/1.3125 Roboto;
+  text-align: center;
+}
+
+h4 {
+  font: italic 500 20px/1.5 Roboto;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bg-heroimg {
+  max-width: 100%;
+  height: 100vh;
+  border: 1px solid #707070;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 56px;
+}
+
+.bg-heroimg .txt {
+  display: inline-block;
+  color: #ffffff;
+}
+
+.bg-heroimg .txt small {
+  font: italic bold 24px/42px Roboto;
+}
+
+.bg-heroimg .txt h1 {
+  font: italic 900 80px/106px Roboto;
+  margin-bottom: 32px;
+}
+
+.bg-heroimg .txt h3 {
+  font: italic bold 24px/36px Roboto;
+  margin-bottom: 40px;
+}
+
+.bg-heroimg .txt .icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bg-heroimg .txt .icon > div {
+  width: 60px;
+  height: 60px;
+}
+
+.about {
+  padding-bottom: 56px;
+}
+
+.about h2 {
+  margin-bottom: 40px;
+}
+
+.about .bg-photo {
+  width: 384px;
+  height: 384px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.about .intro {
+  font: italic bold 24px/1.75 Roboto;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.about hr {
+  width: 384px;
+  border: 1px solid #000000;
+  margin-bottom: 28px;
+}
+
+.about .exp {
+  text-align: center;
+  font: italic bold 24px/42px Roboto;
+}
+
+.about .exp > li {
+  margin-bottom: 28px;
+}
+
+.about .exp > li:last-child {
+  margin-bottom: 0;
+}
+
+.about .exp p {
+  display: inline-block;
+  position: relative;
+}
+
+.about .exp p:before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  border-radius: 999em;
+  background-color: #891818;
+  position: absolute;
+  top: calc(50% - 11px);
+  left: calc(-16px + -22px);
+}
+
+.brand {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 56px 0 120px 0;
+  text-align: center;
+  border: 1px solid #707070;
+}
+
+.brand h2 {
+  margin-bottom: 12px;
+}
+
+.brand h3 {
+  font: italic 500 24px/42px Roboto;
+  margin-bottom: 32px;
+}
+
+.brand h4 {
+  margin-bottom: 68px;
+}
+
+.brand .bg-brand_img1 {
+  width: 792px;
+  height: 416px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.brand .bg-brand_img2 {
+  width: 588px;
+  height: 416px;
+}
+
+.brand .bg-brand_img3 {
+  width: 588px;
+  height: 416px;
+}
+
+.brand .brand-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.other {
+  padding: 56px 0 96px 0;
+}
+
+.other h2 {
+  margin-bottom: 16px;
+}
+
+.other h4 {
+  margin-bottom: 56px;
+}
+
+.other .work-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.other .work-group > li {
+  margin-bottom: 48px;
+}
+
+.other .work-group > li p {
+  font: italic 500 20px/42px Roboto;
+  text-align: center;
+}
+
+.other .bg-work1 {
+  width: 384px;
+  height: 528px;
+}
+
+.other .bg-work2 {
+  width: 384px;
+  height: 528px;
+}
+
+.other .bg-work3 {
+  width: 384px;
+  height: 528px;
+}
+
+.other .bg-work4 {
+  width: 588px;
+  height: 424px;
+}
+
+.other .bg-work5 {
+  width: 588px;
+  height: 424px;
+}
+
+.other .bg-work6 {
+  width: 384px;
+  height: 280px;
+}
+
+.other .bg-work7 {
+  width: 384px;
+  height: 280px;
+}
+
+.other .bg-work8 {
+  width: 384px;
+  height: 280px;
+}
+
+.contact {
+  background-color: #000000;
+  padding: 64px 0 64px 0;
+  color: #ffffff;
+}
+
+.contact h2 {
+  line-height: 84px;
+  margin-bottom: 16px;
+}
+
+.contact p {
+  font: italic 500 24px/36px Roboto;
+  text-align: center;
+}
+
+.contact p:nth-child(2) {
+  margin-bottom: 16px;
+}
+/*# sourceMappingURL=all.css.map */
