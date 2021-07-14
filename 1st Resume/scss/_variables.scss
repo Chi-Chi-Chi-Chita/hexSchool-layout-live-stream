@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1.3;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 16px;
+}
+
+h2 span {
+  display: inline-block;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+$color:(
+  red:#A00404,
+  blue:#415165,
+)
