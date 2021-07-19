@@ -1,0 +1,39 @@
+@import "reset";
+
+html{
+  box-sizing: border-box;
+}
+*,*::before,*::after{
+  box-sizing: inherit;
+}
+h2{
+  font-size: 20px;
+  line-height: 1.2;
+}
+p{
+  font-size: 16px;
+  line-height: 1.5;
+}
+h3{
+  font-size: 16px;
+  line-height: 1.5;
+  padding:48px 0;
+}
+.container{
+  max-width: 640px;
+  margin:0 auto;
+}
+.wrap{
+  display: flex;
+  .boxleft{
+    .row{
+      display: flex;
+      margin-bottom: 24px;
+      margin-right: 20px;
+    }
+    img{
+      margin-right: 20px;
+      vertical-align: center;
+    }
+  }
+}
