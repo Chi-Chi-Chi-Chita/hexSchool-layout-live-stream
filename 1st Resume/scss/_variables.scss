@@ -6,13 +6,8 @@ html {
   box-sizing: inherit;
 }
 
-h1 {
-  font-size: 80px;
-}
-
 h2 {
-  font-size: 32px;
-  line-height: 1.3;
+  font:32px/43px 'Noto Sans';
   padding-bottom: 8px;
   border-bottom: 1px solid #000;
   margin-bottom: 16px;
@@ -20,14 +15,8 @@ h2 {
 
 h2 span {
   display: inline-block;
-  margin-left: 1rem;
-  font-size: 1.5rem;
-}
-
-p {
-  font-size: 24px;
-  line-height: 1.5;
-  margin-bottom: 16px;
+  margin-left: 16px;
+  font:24px/32px Roboto;
 }
 
 .container {
