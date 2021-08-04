@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+h5 {
+  margin: 0;
+}
+
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.lh-33 {
+  line-height: 2.0625rem;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.text-green {
+  color: #198754;
+}
+
+.bg-green {
+  background-color: #198754;
+}
+
+.list {
+  background-color: #f8f9fa;
+  padding: 40px 0 32px 0;
+}
+
+.list h1 > a {
+  height: 40px;
+  background: url(../img/logo-ANSWER.svg) no-repeat center center/contain;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 32px;
+}
+
+.list-item:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.list-item:hover a {
+  border-left: 4px solid #198754;
+}
+
+.list-item:hover span, .list-item:hover p {
+  color: #198754;
+}
+
+.list-item a {
+  padding: 0 32px 0 32px;
+  transition: all .3s;
+}
+
+.list-item span, .list-item p {
+  font-weight: 700;
+  line-height: 1.875rem;
+  color: #212529;
+  transition: all .3s;
+}
+
+.admin {
+  padding: 40px 32px 32px 32px;
+}
+
+.admin-header {
+  margin-bottom: 48px;
+}
+
+.admin-header h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.0625rem;
+  margin-right: 47px;
+}
+
+.admin-header a {
+  font-weight: 700;
+  line-height: 1.5rem;
+  color: #212529;
+  transition: all .3s;
+}
+
+.admin-header a:hover {
+  color: #198754;
+}
+
+.admin-header a span {
+  color: #198754;
+}
+
+.admin-table {
+  margin-bottom: 63px;
+}
+
+.admin-table thead th {
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.admin-table thead th:first-child span {
+  color: #198754;
+}
+
+.admin-table-tbody th, .admin-table-tbody td {
+  padding: 19px 0 19px 0;
+  line-height: 1.5rem;
+}
+
+.admin-table-tbody td a {
+  color: #212529;
+  transition: all .3s;
+}
+
+.admin-table-tbody td a:hover {
+  color: #198754;
+}
+
+.page-item {
+  border: 2px solid #198754;
+  line-height: 1.5rem;
+}
+
+.page-link {
+  color: #198754;
+}
+
+.page-link:hover {
+  background-color: #198754;
+  color: white;
+}
+
+.modal-body .btn {
+  border: 1px solid #CED4DA;
+}
+
+.modal-body .btn:hover {
+  background-color: #198754;
+  color: white;
+}
+
+.modal-footer .btn {
+  border: 1px solid #198754;
+  color: #198754;
+}
+
+.modal-footer .btn:hover {
+  background-color: #198754;
+  color: white;
+}
+/*# sourceMappingURL=all.css.map */
