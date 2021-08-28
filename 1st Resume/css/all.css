@@ -146,6 +146,10 @@ h2 span {
   margin-bottom: 16px;
 }
 
+.skill ul li p {
+  font: 24px/36px Roboto;
+}
+
 .skill ul:last-child {
   margin-bottom: 0;
 }

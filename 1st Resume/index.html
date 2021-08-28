@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <title>切版班-履歷切版</title>
   <link rel="stylesheet" href="css/all.css">
 </head>
@@ -14,7 +16,8 @@
   <header class="intro">
     <div class="container">
       <h1>Joanne<br>Chen</h1>
-      <img src="img/photo-1536180931879-fd2d652efddc.png" alt="">
+      <img src="img/photo-1536180931879-fd2d652efddc.png" alt=""
+        class="animate__animated animate__bounce animate__infinite	">
       <h2>個人資料<span>PROFILE</span></h2>
       <ul>
         <li>
@@ -35,37 +38,37 @@
     <div class="container">
       <h2>學歷<span>EDUCATION</span></h2>
       <ul>
-        <li>國立六角師範大學 視覺設計學系 學士學位 | 2016－2020</li>
-        <li>國立六腳高級中學 美術班 | 2013－2016</li>
+        <li data-aos="fade-up">國立六角師範大學 視覺設計學系 學士學位 | 2016－2020</li>
+        <li data-aos="fade-up">國立六腳高級中學 美術班 | 2013－2016</li>
       </ul>
     </div>
   </section>
   <!--技能-->
   <section class="skill">
     <div class="container">
-      <h2>技能
+      <h2 data-aos="fade-right">技能
         <span>SKILLS</span>
       </h2>
       <ul>
-        <li>
+        <li data-aos="fade-up">
           <p>Adobe Photoshop</p>
         </li>
-        <li>
+        <li data-aos="fade-up">
           <p>Adobe Illustrator</p>
         </li>
-        <li>
+        <li data-aos="fade-up">
           <p>Adobe XD</p>
         </li>
-        <li>
+        <li data-aos="fade-up">
           <p>Adobe Indesign</p>
         </li>
-        <li>
+        <li data-aos="fade-up">
           <p>C4D</p>
         </li>
-        <li>
+        <li data-aos="fade-up">
           <p>Adobe Premiere</p>
         </li>
-        <li>
+        <li data-aos="fade-up">
           <p>語言：中文、英文</p>
         </li>
       </ul>
@@ -76,7 +79,7 @@
     <div class="container">
       <h2>工作經驗<span>WORK EXPERIENCE</span></h2>
       <ul class="list">
-        <li>
+        <li data-aos="fade-right">
           <h3>六角學院 視覺設計實習生 | 2019/07－2020/06</h3>
           <a href="https://www.hexschool.com/" target="_blank"><img src="img/Group 7.svg" alt=""></a>
           <p>
@@ -85,16 +88,16 @@
             W3HexSchool、六角發案服務網介面設計、供給學員的教 案- RWD官方網站設計，並設計各式網頁活動宣傳圖。
           </p>
         </li>
-        <li>
+        <li data-aos="fade-left">
           <h3>獨立接案 Hao Jun 酒標設計 | 2019</h3>
         </li>
-        <li>
+        <li data-aos="fade-left">
           <h3>獨立接案 Exulans 酒標設計 | 2019</h3>
         </li>
-        <li>
+        <li data-aos="fade-left">
           <h3>獨立接案 桃園平鎮市民健走活動提案 | 2019</h3>
         </li>
-        <li>
+        <li data-aos="fade-right">
           <h3>Simtree 興趣咖啡 工讀生 | 2018－2019</h3>
           <a href="https://www.facebook.com/simtree.tw/" target="_blank"><img src="img/Group 8.png" alt=""></a>
           <p>擔任外場及吧台服務生，學習咖啡相關知識。</p>
@@ -103,15 +106,15 @@
     </div>
   </section>
   <!--聯絡方式-->
-  <footer class="connection">
+  <footer class="connection ">
     <div class="container">
       <h2>聯絡方式<span>CONTACT METHOD</span></h2>
       <ul>
         <li class="connection-method">
-          <a href="#">Mail：xxxd@hexschool.com</a>
+          <a href="mailto:xxxd@hexschool.com">Mail：xxxd@hexschool.com</a>
         </li>
-        <li>
-          Phone：0910123456
+        <li class="connection-method">
+          <a href="tel:+886-910123456">Phone：0910123456</a>
         </li>
         <li>
           Kaohsiung, Taiwan
@@ -133,6 +136,10 @@
       </ul>
     </div>
   </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
